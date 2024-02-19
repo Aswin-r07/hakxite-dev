@@ -1,0 +1,492 @@
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="background.css">
+  <link rel="stylesheet" href="social.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+  <!-- starsss -->
+  <div class="stars">
+
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+  <!-- end stars -->
+  <div class="flex-auto text-yellow-400">
+    <section class="py-12 lg:py-16 xl:py-20" style="height: 600px;">
+      <div class="container px-4 md:px-6">
+        <div class="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
+          <!-- ithann left -->
+          <div class="space-y-4 left">
+            <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl hk"> HAKXITE - Virtual Hackathon </h1>
+            <div class="space-y-4 text-gray-500 dark:text-gray-400">
+              <p class="text-base leading-none sm:text-xl md:text-base lg:text-xl/none">
+                Join us for a 2-day virtual hackathon to build the future of
+                the web.
+              </p>
+              <div class="space-y-1">
+                <p class="text-sm"><strong>Starts</strong>: April 22, 2023
+                </p>
+                <p class="text-sm"><strong>Ends</strong>: April 24, 2023
+                </p>
+              </div>
+
+
+              <div class="w-50 box2">
+                <style>
+                  @font-face {
+                    font-family: 'digital-clock-font';
+                    src: url(digital-dream.narrow.ttf);
+                  }
+                  .hk {
+                    font-family: Hacked;
+                    font-size: 3em;
+                    letter-spacing: 1px;
+                  }
+
+                  #demo {
+                    text-align: justify-center;
+                    font-size: 40px;
+                    color: yellow;
+                    font-family: 'digital-clock-font';
+                  }
+
+                  #right {
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  }
+
+                  .box2 {
+                    height: 70px;
+                    width: 500px;
+                    border: 2px;
+                    border-color: yellow;
+                    position: absolute;
+                    right: 120px;
+                    top: 55px;
+                  }
+
+                  p2 {
+                    position: relative;
+                    left: 110px;
+                    top: 20px;
+                  }
+                </style>
+
+              </div>
+            </div>
+          </div>
+          <!-- ith right ann -->
+          <div class="space-y-4 right">
+            <p id="demo" class="text-center"></p>
+            <p class="font-mono text-3xl font-bold text-center justify-normal">LEFT FOR A CHANGE</p>
+            <script>
+              var countDownDate = new Date("mar 23,2024 09:00:00").getTime();
+              // Update the count down every 1 second
+              var x = setInterval(function () {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+              }, 1000);
+
+            </script>
+          </div>
+        </div>
+        <div class="box">
+          <style>
+            .box {
+              flex: 1 1 auto;
+              background-color: transparent;
+              width: 75px;
+              height: 400px;
+              position: fixed;
+              top: 10px;
+              right: 3px;
+              background-image: url(hakxite.jpg);
+              background-size: contain;
+              background-repeat: repeat-x;
+              z-index: -3;
+            }
+
+            @media only screen and (max-width: 600px) {
+              .box {
+                width: 25px;
+                height: 100px;
+                background-repeat: no-repeat;
+              }
+            }
+          </style>
+          <!--<img class="" src="WhatsApp Image 2024-02-14 at 18.51.59_e1856e62.jpg"  alt="Hackathon">-->
+        </div>
+      </div>
+      <div class="wrapper">
+        <style>
+          body {
+            font-family: 'Lato', sans-serif;
+          }
+
+          .wrapper {
+            display: flex;
+            justify-content: center;
+          }
+
+          .link_wrapper {
+            position: relative;
+          }
+
+          a {
+            display: block;
+            width: 300px;
+            height: 50px;
+            line-height: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            background: rgb(107 114 128);
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 3px solid #333;
+            transition: all .35s;
+          }
+
+          .icon {
+            width: 50px;
+            height: 50px;
+            border: 3px solid transparent;
+            position: absolute;
+            transform: rotate(45deg);
+            right: 0;
+            top: 0;
+            z-index: -1;
+            transition: all .35s;
+          }
+
+          .icon svg {
+            width: 30px;
+            position: absolute;
+            top: calc(50% - 15px);
+            left: calc(50% - 15px);
+            transform: rotate(-45deg);
+            fill: rgb(107 114 128);
+            transition: all .35s;
+          }
+
+          a:hover {
+            width: 300px;
+            border: 3px solid yellow;
+            background: transparent;
+            color: rgb(107 114 128);
+          }
+
+          a:hover+.icon {
+            border: 3px solid yellow;
+            border-radius: 10px;
+            right: -15%;
+            z-index: 100;
+          }
+          a:hover+.icon svg {
+           fill: white;
+          }
+
+          .btn-pottiyath {
+            background: rgba(0, 0, 0, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4.5px);
+            -webkit-backdrop-filter: blur(4.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color:rgb(107 114 128);
+          }
+          .btn-pottiyath:hover {
+            color:white;
+            text-shadow: 1px 1px 5px white;
+          }
+        </style>
+        <div class="link_wrapper">
+          <a href="#a" class="btn-pottiyath" style="display: flex;justify-content: center;align-items: center;">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46" fill="#fff">
+              <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 
+                          12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 
+                          13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 
+                          2.18.08 3.34z"></path>
+              <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 
+                          104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 
+                          55.41 0 0 1 50.58 55.34z"></path>
+            </svg>
+            Apply with Devfolio</a>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+              <path
+                d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="py-6 border-t border-b lg:py-12">
+      <div class="container px-4 md:px-6">
+        <div class="flex justify-center -mx-4 space-x-4">
+          <div class="px-4 w-1/3 max-w-[200px] text-center">
+            <h2 class="font-bold" style="position: relative; left: 30px;">Register</h2>
+            <p class="text-sm text-gray-500 dark:text-gray-400" style="position: relative;left: 30px;">Now Open</p>
+          </div>
+          <div class="px-4 w-1/3 max-w-[200px] text-center">
+            <h2 class="font-bold">Hack</h2>
+            <p class="text-sm text-gray-500 dark:text-gray-400">April 22-24</p>
+          </div>
+          <div class="px-4 w-1/3 max-w-[200px] text-center">
+            <h2 class="font-bold">Winners</h2>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Announced Soon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-6 border-t border-b lg:py-12 ">
+      <div class="container px-4 md:px-6">
+        <div class="grid gap-6 lg:grid-cols-2 xl:gap-12">
+          <div class="space-y-4">
+            <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl">
+              Event Details
+            </h2>
+            <div class="prose lg:max-w-none dark:prose-invert prose-gray">
+              <p>
+                The Vercel Virtual Hackathon is a 3-day online event where
+                developers can collaborate and build projects using the
+                Vercel platform. Participants will have the opportunity to
+                create web applications, APIs, and more, and showcase their
+                work to the community.
+              </p>
+              <p>
+                Whether you're a beginner or an experienced developer,
+                the hackathon is open to everyone. You can work solo or as
+                part of a team, and you'll have access to resources,
+                tutorials, and support from the Vercel team.
+              </p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl">
+              Schedule
+            </h2>
+            <div class="prose lg:max-w-none dark:prose-invert prose-gray">
+              <ul1 class="list-disc list-inside">
+                <li><strong>Day 1 (April 22)</strong>: Kickoff and hacking
+                  begins
+                </li>
+                <li><strong>Day 2 (April 23)</strong>: Workshops and office
+                  hours
+                </li>
+                <li><strong>Day 3 (April 24)</strong>: Submissions and judging
+                </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-6 border-t border-b lg:py-12">
+      <div class="container px-4 md:px-6">
+        <div class="grid gap-6 lg:grid-cols-2">
+          <div class="space-y-4">
+            <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl">
+              Prizes
+            </h2>
+            <div class="prose lg:max-w-none dark:prose-invert prose-gray">
+              <ul1 class="list-disc list-inside">
+                <li><strong>1st Place</strong>: $5,000 in Vercel credits
+                </li>
+                <li><strong>2nd Place</strong>: $3,000 in Vercel credits
+                </li>
+                <li><strong>3rd Place</strong>: $1,000 in Vercel credits
+                </li>
+                </ul>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl">
+              Sponsors
+            </h2>
+            <div class="flex items-center space-x-4"><img src="/placeholder.svg" width="100" height="50" alt="Company"
+                class="object-contain overflow-hidden rounded-lg aspect-banners"><img src="/placeholder.svg" width="100"
+                height="50" alt="Company" class="object-contain overflow-hidden rounded-lg aspect-banners"><img
+                src="/placeholder.svg" width="100" height="50" alt="Company"
+                class="object-contain overflow-hidden rounded-lg aspect-banners"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-6 border-t border-b lg:py-12">
+      <div class="container px-4 md:px-6">
+        <div class="grid gap-6 lg:grid-cols-2">
+          <div class="space-y-4">
+            <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl">
+              FAQ
+            </h2>
+            <div class="space-y-4">
+              <div class="border-t border-gray-200 dark:border-gray-800">
+                <h3 class="text-lg font-semibold">
+                  How do I submit my project?
+                </h3>
+                <p>
+                  You can submit your project through the Vercel dashboard.
+                </p>
+              </div>
+              <div class="border-t border-gray-200 dark:border-gray-800">
+                <h3 class="text-lg font-semibold">
+                  Can I work on my project before the hackathon?
+                </h3>
+                <p>
+                  Yes, you can plan and prepare your project beforehand, but
+                  the actual coding should take place during the
+                  hackathon.
+                </p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section style="height: 350px;">
+      <div class="space-y-4 text-gray-400">
+        <h2 class="text-2xl font-bold tracking-tighter sm:text-3xl" style="position: relative; top: 20px;">
+          Contact Us
+        </h2>
+        <div id="lol" class="w-full max-w-sm space-y-2 col1" style="position: relative;top: 10px;">
+          <style>
+            #lol {
+              color: rgb(156 163 175);
+            }
+          </style>
+          <form>
+            <input
+              class="flex w-full h-10 px-3 py-2 text-sm bg-black border rounded-md file:bg-transparent disabled:opacity-50 border-input file:border-0 file:font-medium file:text-sm placeholder:text-muted-foreground disabled:cursor-not-allowed ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              placeholder="Email" required="" type="email">
+            <input style="position: relative;top: 5px;"
+              class="flex bg-black file:bg-black disabled:opacity-100 px-3 py-2 border border-input file:border-0 rounded-md w-full h-[150px] file:font-medium text-sm file:text-sm placeholder:text-muted-foreground disabled:cursor-not-allowed ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              placeholder="Message" required="" type="text">
+            <button
+              style="top: 10px; border-style: dashed; border: 1px;border-color: grey; border: 2px solid;width: 100px;position: relative;left: 145px;"
+              class="inline-flex items-center justify-center w-full h-10 px-4 py-2 text-sm font-medium transition-colors rounded-md bg-primary hover:bg-primary/90 disabled:opacity-50 text-primary-foreground whitespace-nowrap disabled:pointer-events-none ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div style="position:relative; border: 2px solid;height:130px;width:300px">
+          <ul class="object-position:cover" style="top: 45px;">
+            <li>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-instagram"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa fa-linkedin"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </section>
+  </div>
+  </div>
+  </div>
+
+  </div>
+</body>
