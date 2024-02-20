@@ -4,10 +4,12 @@
   <link rel="stylesheet" href="social.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script type="text/javascript" src="starfield.js"></script>
+  <script type="text/javascript" src="followme.js" defer></script>
 </head>
 
 <body>
   <canvas id="canvas" width="100vw" height="100vh"></canvas>
+  <canvas id="canvas1" width="100vw" height="100vh" style="position: fixed; z-index: -2;"></canvas>
   <!-- starsss -->
   <div>
 
@@ -117,6 +119,10 @@
                     position: absolute;
                     right: 120px;
                     top: 55px;
+                  }
+                  .boom:hover {
+                    box-shadow: 0px 0px 40px rgba(20, 80, 200, 0.8);
+                    transition: box-shadow 700ms ease-in-out;
                   }
 
                   p2 {
@@ -263,7 +269,7 @@
           .glassmorphism {
             background: rgba(0, 0, 0, 0.25);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(4.5px);
+            backdrop-filter: blur(40.5px);
             -webkit-backdrop-filter: blur(4.5px);
             border-radius: 10px;
             margin:10px 0;
@@ -312,7 +318,7 @@
 
       </div>
     </section>
-    <section class="py-6  lg:py-12 glassmorphism">
+    <section class="py-6  lg:py-12 glassmorphism boom ">
       <div class="container px-4 md:px-6">
         <div class="flex justify-center -mx-4 space-x-4">
           <div class="px-4 w-1/3 max-w-[200px] text-center">
@@ -330,7 +336,7 @@
         </div>
       </div>
     </section>
-    <section class="py-6  lg:py-12 glassmorphism monospacetext">
+    <section class="py-6  lg:py-12 glassmorphism monospacetext boom ">
       <div class="container px-4 md:px-6">
         <div class="grid gap-6 lg:grid-cols-2 xl:gap-12">
           <div class="space-y-4 monospacetext">
@@ -373,7 +379,7 @@
         </div>
       </div>
     </section>
-    <section class="py-6 lg:py-12 glassmorphism monospacetext">
+    <section class="py-6 lg:py-12 glassmorphism monospacetext boom ">
       <div class="container px-4 md:px-6">
         <div class="grid gap-6 lg:grid-cols-2">
           <div class="space-y-4">
@@ -404,7 +410,7 @@
         </div>
       </div>
     </section>
-    <section class="py-6  lg:py-12 glassmorphism monospacetext">
+    <section class="py-6  lg:py-12 glassmorphism monospacetext boom">
       <div class="container px-4 md:px-6">
         <div class="grid gap-6 lg:grid-cols-2">
           <div class="space-y-4">
