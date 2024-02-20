@@ -75,18 +75,18 @@ function start() {
             { speed: 0.03, scale: 0.5, count: 50 },
             { speed: 0.05, scale: 0.75, count: 30 }
         ],
-        starsAngle = 145,
+        starsAngle = 150,
         shootingStarSpeed = {
             min: 15,
-            max: 20
+            max: 40
         },
-        shootingStarOpacityDelta = 0.01,
-        trailLengthDelta = 0.01,
-        shootingStarEmittingInterval = 2000,
+        shootingStarOpacityDelta = 0.05,
+        trailLengthDelta = 0.05,
+        shootingStarEmittingInterval = 700,
         shootingStarLifeTime = 500,
         maxTrailLength = 300,
         starBaseRadius = 2,
-        shootingStarRadius = 3,
+        shootingStarRadius = 10,
         paused = false;
 
         var canvas = document.getElementById("canvas")
