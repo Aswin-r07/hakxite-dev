@@ -108,4 +108,3 @@ function setupCanvas() {
 	canvas.height = window.innerHeight;
 }
 
-/////
