@@ -23,7 +23,7 @@
 ">
     <section class="py-12 lg:py-16 xl:py-20" style="height: 600px;">
       <div class="container px-4 md:px-6 mt-14">
-        <div class="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
+        <div class="grid justify-center items-center content-center gap-6 lg:grid-cols-2 lg:gap-12">
           <!-- ithann left -->
           <div class="space-y-4 left">
             <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl hk"> HAKXITE <br/> Virtual Hackathon </h1>
@@ -174,7 +174,7 @@
             position: relative;
           }
 
-          a {
+          /* a {
             display: block;
             width: 300px;
             height: 50px;
@@ -188,7 +188,7 @@
             letter-spacing: 1px;
             border: 3px solid #333;
             transition: all .35s;
-          }
+          } */
 
           .icon {
             width: 50px;
@@ -211,25 +211,6 @@
             fill: rgb(107 114 128);
             transition: all .35s;
           }
-
-          a:hover {
-            width: 300px;
-            border: 3px solid yellow;
-            background: transparent;
-            color: rgb(107 114 128);
-          }
-
-          a:hover+.icon {
-            border: 3px solid yellow;
-            border-radius: 10px;
-            right: -15%;
-            z-index: 100;
-          }
-
-          a:hover+.icon svg {
-            fill: white;
-          }
-
           .glassmorphism {
             background: rgba(0, 0, 0, 0.25);
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -539,8 +520,11 @@
       <div class="footericon">
         <i class="fa-brands fa-facebook"></i>
       </div>
-      <div class="footericon">
-        <i class="fa-brands fa-instagram"></i>
+      <div class="footericon" >
+        <a  href="https://instagram.com/hakxite">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        
       </div>
       <div class="footericon">
         <i class="fa-brands fa-x-twitter"></i>
@@ -551,7 +535,7 @@
     </div>
     <div class="next">
       <img id="img3" src="https://i.ibb.co/7pn1LJc/Whats-App-Image-2024-02-28-at-3-07-03-PM-removebg-preview.png" alt="The Hackxite Kompany">
-      <sub class="sub">all rights reserved &copy; The Hackxite Kompany</sub>
+      <span class="sub">All rights reserved &copy; The Hakxite Kompany</span>
     </div>
   </section>
   
