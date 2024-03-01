@@ -2,7 +2,45 @@
     font-family: Hacked;
     src: url(https://hackedfont.com/HACKED.ttf);
 }
+.reg {
+    font-family: Hacked;
+    font-size: xx-large;
+}
+.link {
+    text-decoration: underline;
+    text-decoration-color: #facc15d5;
+}
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 9px;
+  /* background-color: #DFE9EB; */
+  background-color: black;
+}
 
+*::-webkit-scrollbar-track:hover {
+  background-color: #F2FCFF;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #F2FCFF;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #FACC15;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #FFEE00;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #FACC15;
+}
 .footerinteicon{
     display: flex;
     flex-direction: row;
